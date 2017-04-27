@@ -47,7 +47,10 @@ if(typeof(dojo) != "undefined") {
             	//wait until the "loading..." node has been hidden, 
             	//indicating that we have loaded content.
                 //more of your own customization code here please :-) 
-            	//let's see what you come up with!! ...
+            	//let's see what you come up with!! 
+		    
+		    dojo.query("span.shareSome-title")[0].textContent=
+                     "TB Hello "+lconn.homepage.userName+" -";
             	
 
             }, ".lotusStreamTopLoading div.loaderMain.lotusHidden");
